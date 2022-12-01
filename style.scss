@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1920px;
+    height: fit-content;
+    margin: 0 auto;
+    font-family: 'Poppins';
+}
+
+.container {
+    padding: 0px 255px;
+}
+
+
+@import './header'; 
+@import './landscape_solution/landscape_solution';
+@import './Provide_service/provide-service';
+@import './experience/experience';
+@import './choose_us/choose-us';
+@import './working_process/working_process';
+@import './call_us/call_us';
+@import './our_staff/our_staff';
+@import './feedback/feedback';
+@import './faq/faq';
+@import './articles/articles';
+@import './bottom_images/bottom-images';
+@import './footer'; 

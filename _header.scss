@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    height: 145px;
+}
+
+.top-header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(12, 75, 53, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contacts-and-langauge {
+        width: 1420px;
+        //margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-contacts {
+        width: 745px;
+        height: 25px;
+    }
+    
+    .contacts-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        
+        li {
+            display: flex;
+            align-items: center;
+            height: 25px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: #FFFFFF;
+        }
+    }
+    
+    .email-header,
+    .phone-header,
+    .location-header {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    select {
+        width: fit-content;
+        height: 25px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: #FFFFFF;
+        background-color: rgba(12, 75, 53, 1);
+        border: none;
+        outline: none;
+    }
+}
+
+.bottom-header {
+    width: 100%;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-and-nav {
+        width: 1410px;
+        height: 55px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .main-logo {
+        width: 120px;
+        height: 55px;
+    }
+
+
+    .nav-and-contact-btn {
+        display: flex;
+        align-items: center;
+    }
+    .nav-list {
+        width: 630px;
+        margin-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: capitalize;
+        color: #212529;
+
+        li:nth-child(2) {
+            color: #00730C;
+        }
+
+    }
+
+    .call-btn {
+        width: 170px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 115, 12, 1);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 5px;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+

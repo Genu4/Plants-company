@@ -1,0 +1,119 @@
+.faq-section {
+    margin-top: 157px;
+    height: 737px;
+}
+
+.faq-section-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.faq-content {
+    width: 828px;
+}
+
+.faq-content-header {
+    margin-bottom: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    color: #212529;
+}
+
+.faq-content-header span {
+    color: #00730C;
+}
+
+.faq-content-text {
+    margin-bottom: 42px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #676767;
+}
+
+.faq-list-content {
+    position: relative;
+    display: block;
+    width: 810px;
+    min-height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: #FFF8F1;
+    border-radius: 5px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #212529;
+    cursor: pointer;
+}
+
+.faq-list-content-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #FFF8F1;
+    border: none;
+    outline: none;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #212529;
+}
+
+.faq-list-content:active {
+    color: #00730C;
+}
+
+.sub-faq-list {
+    visibility: hidden;
+    position: absolute;
+}
+
+.faq-menu li:hover .faq-list-content {
+    background-color: #00730C;
+    color: white;
+}
+
+.faq-menu li:hover .faq-list-content-btn {
+    background-color: #00730C;
+    color: white;
+}
+
+
+.faq-menu li:hover .sub-faq-list {
+    visibility: visible;
+    position: static;
+}
+
+.faq-content li+li {
+    margin-top: 30px;
+}
+
+.hiden-faq-content-text {
+    padding: 20px 30px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #676767;
+}
+
+
+
+.faq-section-img {
+    margin-top: 52px;
+
+}

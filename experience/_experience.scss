@@ -1,0 +1,85 @@
+.experience-block {
+    height: 903px;
+    display: flex;
+}
+
+.experience-block-images {
+    width: 693px;
+}
+
+.experience-block-images-green {
+    width: 450px;
+    height: 706px;
+    background-color: rgba(0, 115, 12, 1);
+}
+
+.experience-block-images-img1 {
+    position: relative;
+    z-index: 10;
+    bottom: 665px;
+    left: 24px
+}
+
+.experience-block-images-img2 {
+    position: relative;
+    z-index: 20;
+    left: 213px;
+    top: -860px;
+}
+
+.experience-block-content {
+    width: 690px;
+    margin: auto 0;
+}
+
+.experience-block-header {
+    margin-bottom: 30px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    color: #212529;
+
+}
+
+.experience-block-header span {
+    color: #00730C;
+}
+
+.experience-content-paragraph {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #676767;
+}
+
+.experience-content-our-block {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.experience-content-our-mission,
+.experience-content-our-vision,
+.experience-content-our-support,
+.experience-content-our-clients {
+    width: 330px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    
+    h5 {
+        margin-left: 30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: capitalize;
+        color: #212529;
+    }
+}

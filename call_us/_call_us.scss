@@ -1,0 +1,43 @@
+.call-us-image {
+    margin: 100px auto 0;
+    width: 1410px;
+    height: 247px;
+    background: url("./call_us/images/01.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.call-us-image p {
+    width: 448px;
+    margin-right: 85px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.call-us-image button {
+    margin-right: 60px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #00730C;
+    border: none;
+    outline: none;
+}
