@@ -13,7 +13,6 @@
 
     .contacts-and-langauge {
         width: 1420px;
-        //margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -122,11 +121,38 @@
         border: none;
         border-radius: 5px;
 
-        img {
+        .call-btn-img {
             margin-right: 10px;
         }
+
+        
     }
 }
 
+.nav-button-img {
+    width: 30px;
+    height: 30px;
+}
 
+.nav-button {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: white;
+    display: none;
+}
+
+.nav-button:active {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.mobile-nav-menu,
+.nav-button-mobile {
+    display: none;
+}
 

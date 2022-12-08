@@ -3,21 +3,17 @@
     height: 70px;
     position: relative;
     
+    
     .top-footer-solution {
         width: 1410px;
         height: 125px;
-        left: 50%;
-        margin-left: -705px;
+        padding: 32px 100px;
         position: absolute;
         background: #D9F1E0;
         border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
 
         .solution-block {
-            width: 1210px;
-            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -54,24 +50,23 @@
 }
 .bottom-footer {
     width: 100%;
-    height: fit-content;
+    // height: fit-content;
     background-color: rgba(12, 75, 53, 1);
     color: rgba(255, 255, 255, 1);
     padding-top: 170px;
 }
 
 .main-info {
-    width: 1410px;
+    max-width: 1410px;
     height: 355px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    
-    
 }
 
 .subscribe {
-    width: 500px;
+    max-width: 500px;
     height: 100%;
     
 

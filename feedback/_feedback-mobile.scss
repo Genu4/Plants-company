@@ -1,0 +1,102 @@
+.client-feedback {
+  width: 100%;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.client-feedback-content {
+  position: relative;
+}
+
+.feedback-field {
+  margin-bottom: 50px;
+  display: block;
+}
+
+.feedback-field-header {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.feedback-field p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.prev-button,
+.next-button {
+  display: none;
+}
+
+.feedback-cards {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.feedback-card {
+  width: 100%;
+  height: 431px;
+  padding: 20px;
+  box-shadow: none;
+  display: block;
+}
+
+.feedback-card img {
+  width: 135px;
+  height: 183px;
+  margin-bottom: 30px;
+}
+
+.feedback-card-content {
+  width: 100%;
+  height: 178px;
+}
+
+.feedback-card-text {
+  width: 100%;
+  height: fit-content;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.feedback-card h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback-card-position {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.feedback-card-header {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedback-stars {
+  width: 124px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}

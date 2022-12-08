@@ -4,7 +4,7 @@
 }
 
 .article-header-content {
-    width: 1136px;
+    max-width: 1136px;
     margin: 50px auto 0;
     text-align: center;
 }
@@ -35,8 +35,7 @@
 }
 
 .articles-slider {
-    height: 549px;
-    
+    height: 550px;
 }
 
 .article {
@@ -54,6 +53,7 @@
 
 .article + .article {
     margin-right: 0px;
+    margin-left: 0px;
 }
 
 .article::after {
@@ -99,6 +99,7 @@
 }
 
 .article-text {
+    width: 100%;
     margin-top: 30px;
     font-family: 'Nunito';
     font-style: normal;
@@ -109,6 +110,7 @@
 }
 
 .data-autor {
+    width: 100%;
     margin-top: 25px;
     padding-left: 41px;
     padding-right: 41px;
@@ -123,6 +125,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 
 .slick-dots li {
     margin-top: 50px;
@@ -142,3 +145,4 @@
     height: 8px;
     background: #00730C;
 }
+

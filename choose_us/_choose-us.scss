@@ -2,8 +2,11 @@
     margin-top: 100px;
     width: 100%;
     height: 655px;
-    padding: 100px 255px;
     background-color: rgba(12, 75, 53, 1);
+    padding-top: 100px;
+}
+
+.choose-us-content {
     display: flex;
     justify-content: space-between;
 }
@@ -63,6 +66,8 @@
 }
 
 .preference-checked-img {
+    // width: 30px;
+    // height: 30px;
     margin-right: 20px;
 }
 

@@ -1,0 +1,28 @@
+@media (max-width: 375px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .nav-button-mobile {
+    display: block;
+  }
+
+
+
+  @import "./header/header_mobile";
+  @import "./header/button";
+  @import "./header/mobile-nav";
+  @import "./landscape_solution/landscape-solution-mobile";
+  @import "./Provide_service/provide_service_mobile";
+  @import "./experience/experience-mobile";
+  @import "./choose_us/choose-us-mobile";
+  @import "./call_us/call_us_mobile";
+  @import "./working_process/working_process_mobile";
+  @import "./call_us/call_us_mobile";
+  @import "./our_staff/our-staff-mobile";
+  @import "./feedback/feedback-mobile";
+  @import "./faq/faq_mobile";
+  @import "./articles/articles-mobile";
+  @import "./bottom_images/bottom-images-mobile";
+  @import "./footer/footer-mobile";
+}

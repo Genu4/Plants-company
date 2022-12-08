@@ -12,22 +12,31 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="top-header">
+
             <div class="contacts-and-langauge">
                 <div class="header-contacts">
                     <ul class="contacts-list">
-                        <li><img class="email-header" src="images/email-header.svg" alt="">Email:
-                            Plantingsrvice@7oroof.com</li>
-                        <li><img class="phone-header" src="images/phone-header.svg" alt="">+38(099) 999-99-99</li>
-                        <li><img class="location-header" src="images/location-header.svg" alt="">2072 Pinnicknick
-                            Street, WA 98370</li>
+                        <li>
+                            <img class="email-header" src="./header/images/email-header.svg" alt="">
+                            <div class="hide-on-mobile">Email: Plantingsrvice@7oroof.com</div>
+                        </li>
+                        <li>
+                            <img class="phone-header" src="./header/images/phone-header.svg" alt="">
+                            <div class="hide-on-mobile">+38(099) 999-99-99</div>
+                        </li>
+                        <li>
+                            <img class="location-header" src="./header/images/location-header.svg" alt="">
+                            <div class="hide-on-mobile">2072 Pinnicknick Street, WA 98370</div>
+                        </li>
                     </ul>
                 </div>
                 <div class="language">
@@ -37,14 +46,15 @@
                     </select>
                 </div>
             </div>
+
         </div>
         <div class="bottom-header">
             <div class="logo-and-nav">
                 <div class="logo">
-                    <img class="main-logo" src="images/main-logo.svg" alt="">
+                    <img class="main-logo" src="./header/images/main-logo.svg" alt="">
                 </div>
                 <div class="nav-and-contact-btn">
-                    <nav>
+                    <nav class="header-nav">
                         <ul class="nav-list">
                             <li>Home &#8744;</li>
                             <li>Company &#8744;</li>
@@ -54,7 +64,44 @@
                             <li>Contact</li>
                         </ul>
                     </nav>
-                    <button class="call-btn" type="submit"><img src="images/phone.svg" alt=""> Call Us</button>
+                    <button class="call-btn" type="submit">
+                        <img class="call-btn-img" src="./header/images/phone.svg" alt="">
+                        <div class="call-btn-text">
+                            Call Us
+                        </div>
+                    </button>
+                    <button type="button" class="nav-button-mobile">
+                        <span class="nav-button-mobile-icon"></span>
+                    </button>
+
+                    <!-- mobile navigation menu -->
+
+                        <div class="mobile-nav-menu">
+                            <nav class="mobile-header-nav">
+                                <ul class="mobile-nav-list">
+                                    <li>Home &#8744;</li>
+                                    <li>Company &#8744;</li>
+                                    <li>Services &#8744;</li>
+                                    <li>Project &#8744;</li>
+                                    <li>Blog &#8744;</li>
+                                    <li>Contact</li>
+                                </ul>
+                            </nav>
+    
+                            <div class="mobile-nav-social-networks">
+                                <a href="#"><img src="./header/images/facebook-mobile.svg" alt=""></a>
+                                <a href="#"><img src="./header/images/linkedin-mobile.svg" alt=""></a>
+                                <a href="#"><img src="./header/images/google-mobile.svg" alt=""></a>
+                                <a href="#"><img src="./header/images/twitter-mobile.svg" alt=""></a>
+                            </div>
+                            <div class="mobile-nav-header-copyright">
+                                <p>
+                                    © Copyright Plant Store 2021-22. All right reserved. Design by Themadbrains
+                                </p>
+                            </div>
+                        </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -67,6 +114,7 @@
             <div class="landscape-img-small">
                 <img src="./landscape_solution/images/landscape-small-img.jpg" alt="">
             </div>
+
             <div class="landscape-solution-content">
                 <p class="planting-services"> <img class="planting-services-img"
                         src="./landscape_solution/images/Vector.svg" alt=""> landscape planting services</p>
@@ -81,31 +129,35 @@
                 </div>
                 <div class="numbers-of-solutions">
                     <div class="happy-customers">
-                        <div class="happy-customers-number">
-                            500+
-                        </div>
+
+                        <span class="happy-customers-number">500+</span>
                         <p class="happy-customers-text">
                             Happy Customers
                         </p>
+
+
                     </div>
                     <div class="garden-created">
-                        <div class="garden-created-number">
-                            800+
-                        </div>
+
+                        <span class="garden-created-number">800+</span>
                         <p class="garden-created-text">
                             Garden Created
                         </p>
+
+
                     </div>
                     <div class="members">
-                        <div class="members-number">
-                            100+
-                        </div>
+
+                        <span class="members-number">100+</span>
                         <p class="members-number-text">
                             Team Members
                         </p>
+
+
                     </div>
                 </div>
             </div>
+
             <div class="landscape-img-large">
                 <img src="./landscape_solution/images/landscape-solution-img.jpg" alt="">
             </div>
@@ -129,76 +181,92 @@
 
                     <div class="services">
                         <div class="block-1">
-                            <img class="block-img" src="Provide_service/images/Tree_Planting.svg" alt="">
-                            <h5 class="block-1-header">
-                                Tree Planting
-                            </h5>
-                            <p class="block-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div class="block-img-1"></div>
+                            <div>
+                                <h5 class="block-1-header">
+                                    Tree Planting
+                                </h5>
+                                <p class="block-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Grass_Cutting.svg" alt="">
-                            <h5 class="block-2-header">
-                                Grass Cutting
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Grass Cutting
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Garden_Design.svg" alt="">
-                            <h5 class="block-2-header">
-                                Garden Design
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Garden Design
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Plant_Growing.svg" alt="">
-                            <h5 class="block-2-header">
-                                Plant Growing
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Plant Growing
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Flower_Scaping.svg" alt="">
-                            <h5 class="block-2-header">
-                                Flower Scaping
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Flower Scaping
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Cutting_Branch.svg" alt="">
-                            <h5 class="block-2-header">
-                                Branch Cutting
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Branch Cutting
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/PW_Control.svg" alt="">
-                            <h5 class="block-2-header">
-                                Pests, Weeds Control
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Pests, Weeds Control
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                         <div class="block-2">
                             <img class="block-img" src="Provide_service/images/Watering_Irrigation.svg" alt="">
-                            <h5 class="block-2-header">
-                                Wattering & Irrigation
-                            </h5>
-                            <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
-                                numquam
-                                aliquam.</p>
+                            <div>
+                                <h5 class="block-2-header">
+                                    Wattering & Irrigation
+                                </h5>
+                                <p class="block-2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ad
+                                    numquam aliquam.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,25 +301,25 @@
                         </p>
                         <div class="experience-content-our-block">
                             <div class="experience-content-our-mission">
-                                <img src="./experience/images/our_mission.svg" alt="">
+                                <img class="experience-content-img" src="./experience/images/our_mission.svg" alt="">
                                 <h5>
                                     Our Mission
                                 </h5>
                             </div>
                             <div class="experience-content-our-vision">
-                                <img src="./experience/images/our_vision.svg" alt="">
+                                <img class="experience-content-img" src="./experience/images/our_vision.svg" alt="">
                                 <h5>
                                     Our Vision
                                 </h5>
                             </div>
                             <div class="experience-content-our-support">
-                                <img src="./experience/images/our_support.svg" alt="">
+                                <img class="experience-content-img" src="./experience/images/our_support.svg" alt="">
                                 <h5>
                                     Support Team
                                 </h5>
                             </div>
                             <div class="experience-content-our-clients">
-                                <img src="./experience/images/our_client.svg" alt="">
+                                <img class="experience-content-img" src="./experience/images/our_client.svg" alt="">
                                 <h5>
                                     Our Clients
                                 </h5>
@@ -264,35 +332,48 @@
 
         <!-- Why choose us block -->
 
-        <div class="choose-us">
-            <div class="choose-us-text">
-                <h3 class="choose-us-header">
-                    Why Choose Us
-                </h3>
-                <p class="choose-us-paragraph">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium autem placeat saepe debitis
-                    magnam quia quidem numquam iusto laborum. Laborum nostrum ut at dolores tempora, quo vel reiciendis
-                    pariatur deleniti sed cum autem ipsam eaque eum, accusantium debitis nam qui!
-                </p>
-                <div class="choose-us-preference">
-                    <div class="preference-col-1">
-                        <p class="choose-us-preference-point"><img class="preference-checked-img"
-                                src="./choose_us/images/checked.svg" alt="">Proper Take Care</p>
-                        <p class="choose-us-preference-point"><img class="preference-checked-img"
-                                src="./choose_us/images/checked.svg" alt="">Clean Working</p>
+        <section class="choose-us">
+            <div class="container">
+                <div class="choose-us-content">
+                    <div class="choose-us-text">
+                        <h3 class="choose-us-header">
+                            Why Choose Us
+                        </h3>
+                        <p class="choose-us-paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium autem placeat saepe
+                            debitis
+                            magnam quia quidem numquam iusto laborum. Laborum nostrum ut at dolores tempora, quo vel
+                            reiciendis
+                            pariatur deleniti sed cum autem ipsam eaque eum, accusantium debitis nam qui!
+                        </p>
+                        <div class="choose-us-preference">
+                            <div class="preference-col-1">
+                                <p class="choose-us-preference-point"><img class="preference-checked-img"
+                                        src="./choose_us/images/checked.svg" alt="">Proper Take Care</p>
+                                <p class="choose-us-preference-point"><img class="preference-checked-img"
+                                        src="./choose_us/images/checked.svg" alt="">Clean Working</p>
+                            </div>
+                            <div class="preference-col-2">
+                                <p class="choose-us-preference-point"><img class="preference-checked-img"
+                                        src="./choose_us/images/checked.svg" alt="">Expert Farmer</p>
+                                <p class="choose-us-preference-point"><img class="preference-checked-img"
+                                        src="./choose_us/images/checked.svg" alt="">Home Gardening</p>
+                            </div>
+
+                        </div>
+                        <div class="discover-more-btn-block">
+                            <button class="discover-more-btn" type="submit">Discover More</button>
+                        </div>
                     </div>
-                    <div class="preference-col-2">
-                        <p class="choose-us-preference-point"><img class="preference-checked-img"
-                                src="./choose_us/images/checked.svg" alt="">Expert Farmer</p>
-                        <p class="choose-us-preference-point"><img class="preference-checked-img"
-                                src="./choose_us/images/checked.svg" alt="">Home Gardening</p>
+                    <div>
+                        <img class="choose-img" src="choose_us/images/choose_img.jpg" alt="">
                     </div>
 
                 </div>
-                <button class="discover-more-btn" type="submit">Discover More</button>
+
             </div>
-            <img class="choose-img" src="choose_us/images/choose_img.jpg" alt="">
-        </div>
+
+        </section>
 
         <!-- Working Process -->
 
@@ -315,7 +396,9 @@
                     <div class="working-process-sequence">
                         <div class="working-process-sequence-card bg-green">
                             <div class="card-icon">
-                                <img src="./working_process/images/01.svg" alt="">
+                                <div class="card-icon-img">
+
+                                </div>
                                 <div class="card-icon-number white-number">1</div>
                             </div>
                             <h5>
@@ -406,12 +489,14 @@
                     </div>
                     <div class="our-staff-cards">
                         <div class="our-staff-card card-1">
-                            <h5>
-                                Doris Jordan
-                            </h5>
-                            <h6>
-                                Design Expert
-                            </h6>
+                            <div class="empty-for-desktop">
+                                <h5>
+                                    Doris Jordan
+                                </h5>
+                                <h6>
+                                    Design Expert
+                                </h6>
+                            </div>
                             <div class="staf-social-networks">
                                 <a href=""><img src="./our_staff/images/Vector.svg" alt=""></a>
                                 <a href=""><img src="./our_staff/images/facebook.svg" alt=""></a>
@@ -555,7 +640,8 @@
                             <li>
                                 <a class="faq-list-content">
                                     1. Which Plan is Right For Me?
-                                    <button class="faq-list-content-btn">+</button>
+                                    <button class="faq-list-content-btn"><img class="faq-list-content-img"
+                                            src="./faq/images/plus.svg" alt=""></button>
                                 </a>
                                 <ul class="sub-faq-list">
                                     <li>
@@ -572,7 +658,9 @@
                             </li>
                             <li>
                                 <a class="faq-list-content">
-                                    2. Which Plan is Right For Me? <button class="faq-list-content-btn">+</button>
+                                    2. Which Plan is Right For Me?
+                                    <button class="faq-list-content-btn"><img class="faq-list-content-img"
+                                            src="./faq/images/plus.svg" alt=""></button>
                                 </a>
                                 <ul class="sub-faq-list">
                                     <li>
@@ -589,7 +677,9 @@
                             </li>
                             <li>
                                 <a class="faq-list-content">
-                                    3. Which Plan is Right For Me? <button class="faq-list-content-btn">+</button>
+                                    3. Which Plan is Right For Me?
+                                    <button class="faq-list-content-btn"><img class="faq-list-content-img"
+                                            src="./faq/images/plus.svg" alt=""></button>
                                 </a>
                                 <ul class="sub-faq-list">
                                     <li>
@@ -606,7 +696,9 @@
                             </li>
                             <li>
                                 <a class="faq-list-content">
-                                    4. Which Plan is Right For Me? <button class="faq-list-content-btn">+</button>
+                                    4. Which Plan is Right For Me?
+                                    <button class="faq-list-content-btn"><img class="faq-list-content-img"
+                                            src="./faq/images/plus.svg" alt=""></button>
                                 </a>
                                 <ul class="sub-faq-list">
                                     <li>
@@ -628,6 +720,8 @@
 
             </div>
         </section>
+
+        <!-- Articles -->
 
         <section class="articles">
             <div class="container">
@@ -651,10 +745,13 @@
                                 <a href="#">Ask The Agronomists: Lawncare Tips From The Experts</a>
                             </h3>
                             <p class="article-text">
-                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque
+                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula
+                                eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet,
+                                consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa.
+                                Cum sociis natoque
                             </p>
                         </div>
-                        
+
                         <div class="data-autor">
                             <div class="data">
                                 <u>SEP 6-2021</u>
@@ -676,10 +773,13 @@
                                 <a href="#">Ask The Agronomists: Lawncare Tips From The Experts</a>
                             </h3>
                             <p class="article-text">
-                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque
+                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula
+                                eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet,
+                                consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa.
+                                Cum sociis natoque
                             </p>
                         </div>
-                        
+
                         <div class="data-autor">
                             <div class="data">
                                 <u>SEP 6-2021</u>
@@ -701,10 +801,13 @@
                                 <a href="#">Ask The Agronomists: Lawncare Tips From The Experts</a>
                             </h3>
                             <p class="article-text">
-                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque
+                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula
+                                eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet,
+                                consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa.
+                                Cum sociis natoque
                             </p>
                         </div>
-                        
+
                         <div class="data-autor">
                             <div class="data">
                                 <u>SEP 6-2021</u>
@@ -726,10 +829,13 @@
                                 <a href="#">Ask The Agronomists: Lawncare Tips From The Experts</a>
                             </h3>
                             <p class="article-text">
-                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa. Cum sociis natoque
+                                Lorem ipsum dolor sit amet, consectetuer lorem adipiscing elit. Aenean commodo ligula
+                                eget the dolor. Aenean massa. Cum sociis natoque. Lorem ipsum dolor sit amet,
+                                consectetuer lorem adipiscing elit. Aenean commodo ligula eget the dolor. Aenean massa.
+                                Cum sociis natoque
                             </p>
                         </div>
-                        
+
                         <div class="data-autor">
                             <div class="data">
                                 <u>SEP 6-2021</u>
@@ -748,7 +854,7 @@
 
         <!-- bottom images -->
 
-        <div class="bottom-images">
+        <section class="bottom-images">
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
@@ -756,103 +862,116 @@
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
             <div><img src="./bottom_images/images/01.jpg" alt=""></div>
-        </div>
+        </section>
+
+        <section class="mobile-bottom-images">
+            <img src="./bottom_images/images/01.png" alt="">
+            <img src="./bottom_images/images/02.png" alt="">
+        </section>
+
     </main>
 
     <footer>
-        <div class="top-footer">
-            <div class="top-footer-solution">
-                <div class="solution-block">
-                    <p>
-                        We Have A <span>Solution</span> For Your <span>Garden</span>
-                    </p>
-                    <button type="submit">Get A Quate</button>
-                </div>
+        <div class="container">
+            <div class="top-footer">
+                <div class="top-footer-solution">
+                    <div class="solution-block">
+                        <p>
+                            We Have A <span>Solution</span> For Your <span>Garden</span>
+                        </p>
+                        <button type="submit">Get A Quate</button>
+                    </div>
 
+                </div>
             </div>
         </div>
+
         <div class="bottom-footer">
-            <div class="main-info">
-                <div class="subscribe">
-                    <h5>
-                        Subscribe to Newsletter
-                    </h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum ad itaque distinctio est,
-                        commodi adipisci!</p>
-                    <div class="subscribe-button">
-                        <input class="subscribe-email-field" type="text" placeholder="Email...">
-                        <button class="subscribe-btn" type="submit">Subscribe</button>
+            <div class="container">
+                <div class="main-info">
+                    <div class="subscribe">
+                        <h5>
+                            Subscribe to Newsletter
+                        </h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum ad itaque distinctio est,
+                            commodi adipisci!</p>
+                        <div class="subscribe-button">
+                            <input class="subscribe-email-field" type="text" placeholder="Email...">
+                            <button class="subscribe-btn" type="submit">Subscribe</button>
+                        </div>
+                        <div class="line"></div>
+                        <div class="social-networks">
+                            <div class="social-icons">
+                                <a href=""><img src="./footer/images/Facebook.svg" alt=""></a>
+                                <a href=""><img src="./footer/images/linkedin.svg" alt=""></a>
+                                <a href=""><img src="./footer/images/google.svg" alt=""></a>
+                                <a href=""><img src="./footer/images/twiter.svg" alt=""></a>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="line"></div>
-                    <div class="social-networks">
-                        <div class="social-icons">
-                            <a href=""><img src="images/Facebook.svg" alt=""></a>
-                            <a href=""><img src="images/linkedin.svg" alt=""></a>
-                            <a href=""><img src="images/google.svg" alt=""></a>
-                            <a href=""><img src="images/twiter.svg" alt=""></a>
+                    <div class="footer-contacts">
+                        <h5>
+                            Contacts
+                        </h5>
+                        <p>
+                            27 Division St, New York, NY 10002, USA
+                        </p>
+                        <p>
+                            +38 099 999-99-99
+                            <br>
+                            +38 099 999-99-98
+                        </p>
+                        <p>
+                            Solarpenal@gmail.com
+                        </p>
+                    </div>
+                    <div class="useful-links">
+                        <h5>
+                            Useful Links
+                        </h5>
+                        <div class="colomns">
+                            <div class="col-1">
+                                <a href="">&gt; Home</a>
+                                <a href="">&gt; About Us</a>
+                                <a href="">&gt; Services</a>
+                                <a href="">&gt; Project</a>
+                            </div>
+                            <div class="col-2">
+                                <a href="">&gt; Blog</a>
+                                <a href="">&gt; FAQ</a>
+                                <a href="">&gt; Contact Us</a>
+                                <a href="">&gt; Thank you</a>
+                            </div>
                         </div>
 
                     </div>
-                </div>
-                <div class="footer-contacts">
-                    <h5>
-                        Contacts
-                    </h5>
-                    <p>
-                        27 Division St, New York, NY 10002, USA
-                    </p>
-                    <p>
-                        +38 099 999-99-99
-                        <br>
-                        +38 099 999-99-98
-                    </p>
-                    <p>
-                        Solarpenal@gmail.com
-                    </p>
-                </div>
-                <div class="useful-links">
-                    <h5>
-                        Useful Links
-                    </h5>
-                    <div class="colomns">
-                        <div class="col-1">
-                            <a href="">&gt; Home</a>
-                            <a href="">&gt; About Us</a>
-                            <a href="">&gt; Services</a>
-                            <a href="">&gt; Project</a>
-                        </div>
-                        <div class="col-2">
-                            <a href="">&gt; Blog</a>
-                            <a href="">&gt; FAQ</a>
-                            <a href="">&gt; Contact Us</a>
-                            <a href="">&gt; Thank you</a>
-                        </div>
+                    <div class="popular-services">
+                        <h5>
+                            Popular Services
+                        </h5>
+                        <a href="">Tree planting</a>
+                        <a href="">Grass Cutting</a>
+                        <a href="">Pests, Weeds Control</a>
+                        <a href="">Project</a>
                     </div>
-
                 </div>
-                <div class="popular-services">
-                    <h5>
-                        Popular Services
-                    </h5>
-                    <a href="">Tree planting</a>
-                    <a href="">Grass Cutting</a>
-                    <a href="">Pests, Weeds Control</a>
-                    <a href="">Project</a>
-                </div>
-            </div>
-            <div class="footer-copyrigth">
-                <div class="copyrigth-data">
-                    <div class="copyrigth">
-                        &copy; Copyrigth Industrio 2021-22. All rights reserved.
-                    </div>
-                    <div class="site-data">
-                        <a href="#">Private Policy</a>
-                        <a href="#">Sitemap</a>
-                        <a href="#">Terms of Use</a>
+                <div class="footer-copyrigth">
+                    <div class="copyrigth-data">
+                        <div class="copyrigth">
+                            &copy; Copyrigth Industrio 2021-22. All rights reserved.
+                        </div>
+                        <div class="site-data">
+                            <a href="#">Private Policy</a>
+                            <a href="#">Sitemap</a>
+                            <a href="#">Terms of Use</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

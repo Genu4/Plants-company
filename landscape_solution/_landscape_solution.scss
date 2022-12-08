@@ -1,6 +1,5 @@
 .landscape-solution {
     height: 720px;
-    margin-bottom: 100px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -111,6 +110,8 @@
     align-items: center;
 }
 
+
+
 .happy-customers-number,
 .garden-created-number,
 .members-number {
@@ -141,8 +142,8 @@
 
 .landscape-img-large {
     width: 1013px;
-    height: 673px;
-    position: absolute;
-    right: 1px;
-    bottom: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }

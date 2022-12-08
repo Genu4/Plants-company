@@ -1,0 +1,13 @@
+.bottom-images {
+    display: none;
+}
+
+.mobile-bottom-images {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-bottom-images img {
+    filter: grayscale(100%);
+}

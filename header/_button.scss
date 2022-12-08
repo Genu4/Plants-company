@@ -1,0 +1,59 @@
+.nav-button-mobile {
+    margin-left: 40px;
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background: transparent;
+	position: relative;
+	z-index: 999;
+	width: 30px;
+	height: 30px;
+}
+
+
+.nav-button-mobile-icon {
+	display: block;
+	position: relative;
+	width: 30px;
+	height: 2.35px;
+	background-color: #00730C;
+}
+
+.nav-button-mobile-icon::after,
+.nav-button-mobile-icon::before {
+	position: absolute;
+	content: '';
+	height: 2.35px;
+	background-color: #00730C;
+    
+	transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
+}
+
+.nav-button-mobile-icon::before {
+    width: 30px;
+	left: 0;
+	top: -10px;
+}
+
+.nav-button-mobile-icon::after {
+    width: 18px;
+	left: 0;
+	top: 10px;
+}
+
+.nav-button-mobile-icon.active {
+	background-color: transparent;
+}
+
+.nav-button-mobile-icon.active::before {
+	transform: rotate(45deg);
+	top: 0;
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}
+
+.nav-button-mobile-icon.active::after {
+    width: 30px;
+	transform: rotate(-45deg);
+	top: 0;
+    transition: top 0.15s linear, transform 0.15s ease-in 0.15s;
+}

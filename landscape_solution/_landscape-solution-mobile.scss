@@ -1,0 +1,126 @@
+.landscape-solution {
+  height: fit-content;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  background: linear-gradient(
+    79.58deg,
+    rgba(0, 115, 12, 0.81) -39.14%,
+    rgba(251, 246, 238, 0) 90.23%
+  );
+}
+
+.landscape-img-small {
+  display: none;
+}
+
+.landscape-solution-content {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 45px auto 40px;
+}
+
+.planting-services {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.planting-services-img {
+  margin-right: 5px;
+}
+
+.solution-content-header {
+  margin-top: 10px;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.solution-content-paragraph {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.landscape-solution-btn-and-link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landscape-solution-btn {
+  width: 303px;
+  height: 44px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+
+.landscape-solution-link {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  color: #00730c;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.numbers-of-solutions {
+  margin-top: 40px;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.happy-customers,
+.garden-created {
+  width: 145px;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+  border-radius: 32px;
+}
+
+.happy-customers-number,
+.garden-created-number {
+  width: fit-content;
+  height: 32px;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  
+}
+
+.happy-customers-text,
+.garden-created-text {
+  width: 133px;
+  font-size: 10px;
+  line-height: 14px;
+  margin-left: 8px;
+}
+
+.landscape-img-large {
+    width: 100%;
+}
+
+.landscape-img-large img {
+  width: 375px;
+  height: 240px;
+}
+
+.members {
+  display: none;
+}

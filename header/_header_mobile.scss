@@ -1,0 +1,75 @@
+.top-header {
+  width: 100%;
+  height: 55px;
+}
+
+.top-header .contacts-and-langauge {
+  width: 335px;
+  height: 20px;
+  margin: 20px 0 15px 0;
+}
+
+.header-contacts {
+  width: 80px;
+}
+
+.top-header .email-header,
+.top-header .phone-header,
+.top-header .location-header {
+  margin-right: 20px;
+}
+
+.bottom-header {
+  height: 70px;
+}
+
+.bottom-header .main-logo {
+  width: 90px;
+  height: 40px;
+}
+
+.bottom-header .logo-and-nav {
+  width: 100%;
+  margin: 0;
+}
+
+.header-nav {
+  display: none;
+}
+
+.hide-on-mobile {
+  display: none;
+  position: absolute;
+}
+
+.email-header {
+  margin-right: 20px;
+}
+
+.contacts-list {
+  width: 80px;
+}
+
+.bottom-header {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-button {
+  display: block;
+}
+
+.bottom-header .call-btn {
+  width: 40px;
+  height: 35px;
+}
+
+.bottom-header .call-btn .call-btn-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0;
+}
+
+.call-btn-text {
+  display: none;
+}
