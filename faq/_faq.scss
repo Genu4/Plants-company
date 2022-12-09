@@ -1,6 +1,6 @@
 .faq-section {
     margin-top: 100px;
-    height: 737px;
+    height: fit-content;
 }
 
 .faq-section-content {
@@ -72,29 +72,29 @@
     color: #212529;
 }
 
-.faq-list-content:active {
-    color: #00730C;
-}
-
 .sub-faq-list {
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
-.faq-menu li:hover .faq-list-content {
-    background-color: #00730C;
+.sub-faq-list.active {
+    display: block;
+}
+
+
+.faq-list-content.active {
+    background: #FFF8F1;
+    background: #00730C;
     color: white;
 }
 
-.faq-menu li:hover .faq-list-content-btn {
-    background-color: #00730C;
+.faq-list-content.active .faq-list-content-btn {
+    background: #FFF8F1;
+    background: #00730C;
     color: white;
 }
 
-
-.faq-menu li:hover .sub-faq-list {
-    visibility: visible;
-    position: static;
+.faq-menu li.active .faq-list-content-btn {
+    background-color: #00730C;
 }
 
 .faq-content li+li {
@@ -112,6 +112,19 @@
 }
 
 
+.faq-list-content-img {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./faq/images/plus.svg");
+    background-size:cover;
+}
+
+.faq-list-content-img.active {
+    background-image: url("./faq/images/x.svg");
+}
 
 .faq-section-img {
     margin-top: 52px;

@@ -56,7 +56,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .top-header .email-header,
 .top-header .phone-header,
@@ -74,7 +74,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: rgb(12, 75, 53);
   border: none;
   outline: none;
@@ -89,7 +89,7 @@ body {
   justify-content: space-between;
 }
 .bottom-header .logo-and-nav {
-  width: 1410px;
+  width: 1420px;
   height: 55px;
   margin: 0 auto;
   display: flex;
@@ -109,14 +109,25 @@ body {
   margin-right: 100px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.bottom-header .nav-list .nav-list-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.bottom-header .nav-list .nav-list-item-link {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: capitalize;
   color: #212529;
 }
-.bottom-header .nav-list li:nth-child(2) {
-  color: #00730C;
+.bottom-header .nav-list .nav-list-icon {
+  margin: auto 0 auto 5px;
 }
 .bottom-header .call-btn {
   width: 170px;
@@ -129,7 +140,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
 }
@@ -161,6 +172,42 @@ body {
 .mobile-nav-menu,
 .nav-button-mobile {
   display: none;
+}
+
+.sub-nav-list {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(12, 75, 53);
+  border-radius: 0 20px;
+  padding: 15px;
+  top: 98%;
+}
+
+.nav-list-item:hover .sub-nav-list {
+  display: block;
+}
+
+.bottom-header .nav-list .nav-list-item-link:hover {
+  color: #00730c;
+}
+
+.sub-nav-list li {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.sub-nav-list li:hover {
+  opacity: 1;
+}
+
+.sub-nav-list li + li {
+  margin-top: 10px;
 }
 
 .landscape-solution {
@@ -1025,7 +1072,9 @@ body {
 
 .faq-section {
   margin-top: 100px;
-  height: 737px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .faq-section-content {
@@ -1096,28 +1145,28 @@ body {
   color: #212529;
 }
 
-.faq-list-content:active {
-  color: #00730C;
-}
-
 .sub-faq-list {
-  visibility: hidden;
-  position: absolute;
+  display: none;
 }
 
-.faq-menu li:hover .faq-list-content {
-  background-color: #00730C;
+.sub-faq-list.active {
+  display: block;
+}
+
+.faq-list-content.active {
+  background: #FFF8F1;
+  background: #00730C;
   color: white;
 }
 
-.faq-menu li:hover .faq-list-content-btn {
-  background-color: #00730C;
+.faq-list-content.active .faq-list-content-btn {
+  background: #FFF8F1;
+  background: #00730C;
   color: white;
 }
 
-.faq-menu li:hover .sub-faq-list {
-  visibility: visible;
-  position: static;
+.faq-menu li.active .faq-list-content-btn {
+  background-color: #00730C;
 }
 
 .faq-content li + li {
@@ -1132,6 +1181,20 @@ body {
   font-size: 16px;
   line-height: 28px;
   color: #676767;
+}
+
+.faq-list-content-img {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./faq/images/plus.svg");
+  background-size: cover;
+}
+
+.faq-list-content-img.active {
+  background-image: url("./faq/images/x.svg");
 }
 
 .faq-section-img {
